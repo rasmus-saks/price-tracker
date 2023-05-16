@@ -22,7 +22,7 @@ var products = [...]TrackedProduct{
 		Ean:  "4740625004507",
 	},
 	{
-		Name: "Tallegg Kiievi kotlet, TALLEGG, 300g",
+		Name: "Kiievi kotlet, TALLEGG, 300g",
 		Ean:  "4740046011801",
 	},
 	{
