@@ -19,7 +19,7 @@ type selverResponse struct {
 					Price           float64 `json:"price"`
 					CustomerGroupId int     `json:"customer_group_id"`
 					IsDiscount      bool    `json:"is_discount"`
-				}
+				} `json:"prices"`
 			} `json:"_source"`
 		} `json:"hits"`
 	} `json:"hits"`
