@@ -41,15 +41,10 @@ func GetSelverPrice(product Product) *float64 {
 		return nil
 	}
 	prod := res.Hits.Hits[0].Source
-	var finalPrice *float64
 	for _, price := range prod.Prices {
 		if price.CustomerGroupId == 17 {
-			finalPrice = &price.Price
-			break
+			return &price.Price
 		}
 	}
-	if finalPrice == nil {
-		finalPrice = &prod.Price
-	}
-	return finalPrice
+	return &prod.Price
 }
